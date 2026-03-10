@@ -7,6 +7,22 @@ packages:
   gitUrl: https://github.com/sourabh-harkawat-0058QC744
   gitUsername: sourabh-harkawat-0058QC744
   gitBranch: main
+- name: LowerFSPackage
+  gitServerName: srcCtrl_github_Sourabh
+  gitUrl: https://github.com/sourabh-harkawat-0058QC744
+  gitUsername: sourabh-harkawat-0058QC744
+  gitBranch: main
+services:
+- serviceName: project.sourabh_github_10march.integrations:flowne
+  packages:
+  - name: Sourabh_github_10marchProject
+    version: "1.0"
+  - name: LowerFSPackage
+    version: "4.3"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2105
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
